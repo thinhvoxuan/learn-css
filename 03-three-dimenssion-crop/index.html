@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>John Doe's Portfolio Resume</title>
+
+    <link href="./lib/cropperjs/cropper.css" rel="stylesheet" />
+    <link href="./lib/bootstrap-slider/bootstrap-slider.css" rel="stylesheet" />
+    <link href="./lib/bootstrap-colorpicker-plus/css/bootstrap-colorpicker-plus.css" rel="stylesheet" />
+    <link href="./dist/css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section>
+      <div class="container container-main">
+        <div class="row"> 
+          <div class="col-md-8">
+              <div class="edit-image-content">
+                  <div class="edit-top">
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="row">
+                                  <div class="col-md-12">
+                                      <div class="row">
+                                          <div class="col-md-6">
+                                              <i class="fa fa-search-plus" aria-hidden="true"></i> Zoom
+                                          </div>
+                                          <div class="col-md-6">
+                                              <div class="input-group text-right">
+                                                  <input type="text" id="sliderZoomValue" class="form-control text-right" value="123%">
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-md-12">
+                                      <input id="zoomImage" data-slider-id='zoomImageSlider' type="text" data-slider-min="50" data-slider-max="300" data-slider-step="10" data-slider-value="50"/>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="row">
+                                  <div class="col-md-12">
+                                      <i class="fa fa-repeat" aria-hidden="true"></i> Rotate
+                                      <div class="input-group text-right">
+                                          <input type="text" id="slideRotateValue" class="form-control text-right" value="98">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <input id="rotateImage" data-slider-id='rotateImageSlider' type="text" data-slider-min="0" data-slider-max="360" data-slider-step="10" data-slider-value="0"/>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="edit-center">
+                      <div class="edit-review" style="height: 320px;">
+                          <div class="preview-image">
+                              <img id="image-preview" class="img-responsive" src="./images/picture.jpg" />
+                          </div>
+                      </div>
+                      <div class="edit-nav-preview">
+                          <ul>
+                              <li><a>FRONT</a></li>
+                              <li><a>TOP LEFT</a></li>
+                              <li><a>TOP RIGHT</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="edit-bottom">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <h4>Border options</h4>
+                              <select>
+                                  <option value="Solid Color Border"> Solid Color Border </option>
+                                  <option value="Image Wrap"> Image Wrap </option>
+                                  <option value="Mirror Wrap"> Mirror Wrap </option>
+                              </select>
+                              <div class="btn-group btn-group-sm">
+                                  <button type="button" class="btn btn-default" id="color-picker"><span class="color-fill-icon dropdown-color-fill-icon" style="background-color: rgb(127, 96, 0);"></span>&nbsp;<b class="caret"></b></button>
+                              </div>
+
+                          </div>
+                          <div class="col-md-7">
+                              <h4>Orientation</h4>
+                              <div class="radio radio-custom">
+                                  <input type="radio" id="Orientation_Horizontal" name="Orientation" value="Horizontal" checked>
+                                  <label for="Orientation_Horizontal">
+                                      Horizontal                                                                                                                               </label>
+                              </div>
+                              <div class="radio radio-custom">
+                                  <input type="radio" id="Orientation_Vertical" name="Orientation" value="Vertical" >
+                                  <label for="Orientation_Vertical">
+                                      Vertical                                                                                                                               </label>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>Copyright &copy; 2015, All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./lib/cropperjs/cropper.js"></script>
+    <script src="./lib/bootstrap-slider/bootstrap-slider.js"></script>
+    <script src="./lib/bootstrap-colorpicker-plus/js/bootstrap-colorpicker.js"></script>
+    <script src="./lib/bootstrap-colorpicker-plus/js/bootstrap-colorpicker-plus.js"></script>
+    <script src="./js/custom.js"></script>
+  </body>
+</html>

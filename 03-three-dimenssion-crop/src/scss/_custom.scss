@@ -1,0 +1,66 @@
+/****** Edit image **/
+.edit-image-content {
+    border-right: 1px solid #d4d4d4;
+}
+.edit-top{
+
+}
+
+.edit-review .preview-image {
+    width: 100%;
+    height:100%;
+}
+
+.edit-center{
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.edit-nav-preview {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+.edit-nav-preview ul li{
+    list-style: none;
+    display: inline;
+    width: 62px;
+}
+.edit-nav-preview ul li a{
+    padding: 10px;
+    border: 1px solid #d4d4d4;
+    font-size: 10px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.8;
+    text-align: center;
+    color: #9f9f9f;
+}
+.edit-bottom {
+    height: 93px;
+    background-color: #f4f6f4;
+    border-top: solid 1px #d4d4d4;
+    padding:  15px 40px;
+}
+.edit-review{
+    margin: 0 auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border: solid 6px #b05f5f;
+}
+
+.color-fill-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #000;
+    background-color: #fff;
+    margin: 2px;
+}
+
+.dropdown-color-fill-icon {
+    position: relative;
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
