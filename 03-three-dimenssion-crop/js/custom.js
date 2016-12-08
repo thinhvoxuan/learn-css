@@ -1,4 +1,6 @@
 var PRODUCT_RATIO = 4/6;
+var defaultColor = '#b05f5f';
+
 
 $(function(){
     var cropper  = null;
@@ -79,8 +81,9 @@ $(function(){
                 toggleDragModeOnDblclick: false,
                 zoomOnTouch: false,
                 zoomOnWheel: false,
+                checkCrossOrigin: false,
                 crop: function(e) {
-//                console.log(e.detail.x, e.detail.y, e.detail.width, e.detail.height, e.detail.rotate, e.detail.scaleX, e.detail.scaleY);
+                    console.log(e.detail.x, e.detail.y, e.detail.width, e.detail.height, e.detail.rotate, e.detail.scaleX, e.detail.scaleY);
                 },
                 ready: function() {
                     fullSelectCropBox();
@@ -138,11 +141,14 @@ $(function(){
     colorPicker.colorpickerplus();
     colorPicker.on('changeColor', function(e, color){
         if(color==null) {
-            //when select transparent color
             $('.color-fill-icon', $(this)).addClass('colorpicker-color');
+            $('.edit-review').css('border-color', '');
         } else {
             $('.color-fill-icon', $(this)).removeClass('colorpicker-color');
             $('.color-fill-icon', $(this)).css('background-color', color);
+            $('.edit-review').css('border-color', color);
         }
     });
 });
+
+
