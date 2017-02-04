@@ -129,7 +129,22 @@ header .logo{
 .profile li {
 	list-style: none;
 	line-height: 1.9em;
-	
+}
+
+.photos {
+	padding: 0;
+	margin: 0;
+}
+
+.photos li {
+	list-style: none;
+	float: left;
+	margin: 5px;
+	width: 23%;
+}
+
+.photos img {
+	width: 100%;
 }
 
 
