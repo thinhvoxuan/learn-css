@@ -122,6 +122,16 @@ header .logo{
 	}
 }
 
+.profile ul {
+	margin-top: 30px;
+}
+
+.profile li {
+	list-style: none;
+	line-height: 1.9em;
+	
+}
+
 
 footer {
 	background: #f4f4f4;
