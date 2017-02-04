@@ -1,7 +1,9 @@
 /* gulpfile.js */
 var 
     gulp = require('gulp'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    cleanCSS = require('gulp-clean-css')
+;
 
 // source and distribution folder
 var
@@ -46,6 +48,7 @@ gulp.task('fonts', function () {
 gulp.task('sass', ['fonts'], function () {
     return gulp.src(css.in)
         .pipe(sass(css.sassOpts))
+        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest(css.out));
 });
 
